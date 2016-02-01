@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	 <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/missing.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+</head>
+
+<body>
+
+	<script>
+	document.getElementById("result").innerHTML = localStorage.getItem("number");
+	</script>
+
+	<div id="result"></div>
+
+
+<h2><center>Please click on the image that was in the original set of images<center><h2>
+
+
+
+	<div class="left1">
+
+		<img src="img/non/colour/hat.jpg" style="width:175px;height:175px;" onclick="wrong()">
+
+	</div>
+
+	<div class="left2">
+
+		<img src="img/non/colour/boat.jpg" style="width:175px;height:175px;" onclick="wrong()">
+
+	</div>
+
+
+	<div class="left3">
+
+		<img src="img/non/colour/bridge.jpg" style="width:175px;height:175px;" onclick="wrong()">
+		
+	</div>
+
+
+	<div class="middle1">
+
+		<img src="img/colour/ball.jpg" style="width:175px;height:175px;" onclick="correct()" >	
+
+	</div>
+
+	<div class="middle2">
+
+		<img src="img/non/colour/motorbike.jpg" style="width:175px;height:175px;" onclick="wrong()">
+
+	</div>
+
+	<div class="middle3">
+
+		<img src="img/non/colour/sunflower.jpg" style="width:175px;height:175px;" onclick="wrong()">
+
+	</div>
+
+
+	<div class="right1">
+
+		<img src="img/non/colour/mm.jpg" style="width:175px;height:175px;" onclick="wrong()">
+
+	</div>
+
+	<div class="right2">
+
+		<img src="img/non/colour/wind.jpg" style="width:175px;height:175px;" onclick="wrong()">
+
+	</div>
+
+	<div class="right3">
+
+		<img src="img/non/colour/cricket.jpg" style="width:175px;height:175px;" onclick="wrong()">
+
+	</div>
+
+	<script>
+	function correct() {
+
+		if (localStorage.getItem("correct") === null)
+		{
+			var number_correct = 0
+			number_correct = number_correct + 1;
+			localStorage.setItem("correct",number_correct);
+			window.location.href = 'finish.html';
+		}
+		
+
+		else {
+
+			var get_string = localStorage.getItem("correct");
+			var number_correct = parseInt(get_string);
+			number_correct = number_correct + 1;
+			localStorage.setItem("correct",number_correct);
+			window.location.href = 'finish.html';
+		}
+	}
+	</script>
+
+	<script>
+	function wrong() {
+
+		if (localStorage.getItem("wrong") === null)
+		{
+			var number_wrong = 0
+			number_wrong = number_wrong + 1;
+			localStorage.setItem("wrong",number_wrong);
+			window.location.href = 'finish.html';
+		}
+		
+
+		else {
+
+			var get_string = localStorage.getItem("wrong");
+			var number_wrong = parseInt(get_string)
+			number_wrong = number_wrong + 1;
+			localStorage.setItem("wrong",number_wrong);
+			window.location.href = 'finish.html';
+		}
+	}
+	</script>
+
+
+
+
+
+
+
+</body>

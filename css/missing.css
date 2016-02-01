@@ -1,0 +1,73 @@
+.left1 {
+	position: fixed;
+	top: 80px;
+	left: 80px;
+}
+
+.left2 {
+	position: fixed;
+	top: 280px;
+	left: 80px;
+}
+
+.left3 {
+	position: fixed;
+	top: 480px;
+	left: 80px;
+}
+
+
+.middle1 {
+	position: fixed;
+	top: 80px;
+	left: 600px;
+}
+
+.middle2 {
+	position: fixed;
+	top: 280px;
+	left: 600px;
+}
+
+.middle3 {
+	position: fixed;
+	top: 480px;
+	left: 600px;
+}
+
+.right1 {
+	position: fixed;
+	top: 80px;
+	left: 1120px;
+}
+
+.right2 {
+	position: fixed;
+	top: 280px;
+	left: 1120px;
+}
+
+.right3 {
+	position: fixed;
+	top: 480px;
+	left: 1120px;
+}
+
+.bottom_answer {
+	position: fixed;
+	top: 600px;
+	left: 340px;
+}
+
+.submit_button {
+	position: fixed;
+	top: 670px;
+	left: 600px;
+}
+
+.finish_button {
+	position: fixed;
+	top: 670px;
+	left: 1200px;
+}
+
