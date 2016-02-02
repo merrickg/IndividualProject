@@ -60,43 +60,46 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Finished</h1>
+                <h1>Results</h1>
                 <hr>
-                <p>Thank you for taking part in this study!</p>
-                <p>If you have any questions please don't hesitate to ask the experimenter.</p>
+                <p>Number Correct:</p> <p id="correct"></p>
+                <p>Number wrong:</p> <p id="wrong"></p>
+
             </div>
         </div>
 
-        <script>
+    </header>
 
+    <script>
         if (localStorage.getItem("correct") === null)
         {
             var number_correct = 0
+            document.getElementById("correct").innerHTML = number_correct;
         }
 
         else {
 
             var get_string = localStorage.getItem("correct");
             var number_correct = parseInt(get_string);
-           }
+            document.getElementById("correct").innerHTML = number_correct;
+        }
 
         if (localStorage.getItem("wrong") === null)
         {
             var number_wrong = 0
+            document.getElementById("wrong").innerHTML = number_wrong;
         }
 
         else {
 
             var get_string = localStorage.getItem("wrong");
             var number_wrong = parseInt(get_string);
-            }
+            document.getElementById("wrong").innerHTML = number_wrong;
+        }
 
-        </script>
+    localStorage.clear();
 
-        <div class="experiment_button"> 
-        <a href="experimenter.html" type="button" class="btn btn-danger">Experimenter</a>
-
-    </header>
+    </script>
 
     
     
