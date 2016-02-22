@@ -60,17 +60,20 @@
     <center>
 
     <h2>Results of 1st trial</h2>
-                <hr>
+                
+                <p>Trial:</p> <p id="trial1"></p>
                 <p>Number Correct:</p> <p id="correct1"></p>
                 <p>Number wrong:</p> <p id="wrong1"></p>
 
                 <h2>Results of 2nd trial</h2>
-                <hr>
+                
+                <p>Trial:</p> <p id="trial2"></p>
                 <p>Number Correct:</p> <p id="correct2"></p>
                 <p>Number wrong:</p> <p id="wrong2"></p>
 
                 <h2>Results of 3rd trial</h2>
-                <hr>
+                
+                <p>Trial:</p> <p id="trial3"></p>
                 <p>Number Correct:</p> <p id="correct3"></p>
                 <p>Number wrong:</p> <p id="wrong3"></p>
 
@@ -78,6 +81,10 @@
                 
 
     <script>
+
+            var what_trial = localStorage.getItem("trial1");
+            document.getElementById("trial1").innerHTML = what_trial;
+
         if (localStorage.getItem("correct1") === null)
         {
             var number_correct = 0
@@ -104,6 +111,9 @@
             document.getElementById("wrong1").innerHTML = number_wrong;
         }
 
+            var what_trial = localStorage.getItem("trial2");
+            document.getElementById("trial2").innerHTML = what_trial;
+
         if (localStorage.getItem("correct2") === null)
         {
             var number_correct = 0
@@ -129,6 +139,9 @@
             var number_wrong = parseInt(get_string);
             document.getElementById("wrong2").innerHTML = number_wrong;
         }
+
+            var what_trial = localStorage.getItem("trial3");
+            document.getElementById("trial3").innerHTML = what_trial;
 
         if (localStorage.getItem("correct3") === null)
         {
