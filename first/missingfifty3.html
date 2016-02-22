@@ -86,7 +86,9 @@
 			var number_correct = 0
 			number_correct = number_correct + 1;
 			localStorage.setItem("correct1",number_correct);
-			window.location.href = 'finish.html';
+			var myarray = new Array('../second/colour.html','../second/bw.html','../second/fiftyfifty.html');
+    		var ranarray = myarray[Math.floor(Math.random()*myarray.length)];
+    		window.location = ranarray;
 		}
 		
 
@@ -96,7 +98,9 @@
 			var number_correct = parseInt(get_string);
 			number_correct = number_correct + 1;
 			localStorage.setItem("correct1",number_correct);
-			window.location.href = 'finish.html';
+			var myarray = new Array('../second/colour.html','../second/bw.html','../second/fiftyfifty.html');
+    		var ranarray = myarray[Math.floor(Math.random()*myarray.length)];
+    		window.location = ranarray;
 		}
 	}
 	</script>
@@ -109,7 +113,9 @@
 			var number_wrong = 0
 			number_wrong = number_wrong + 1;
 			localStorage.setItem("wrong1",number_wrong);
-			window.location.href = 'finish.html';
+			var myarray = new Array('../second/colour.html','../second/bw.html','../second/fiftyfifty.html');
+    		var ranarray = myarray[Math.floor(Math.random()*myarray.length)];
+    		window.location = ranarray;
 		}
 		
 
@@ -119,7 +125,9 @@
 			var number_wrong = parseInt(get_string)
 			number_wrong = number_wrong + 1;
 			localStorage.setItem("wrong1",number_wrong);
-			window.location.href = 'finish.html';
+			var myarray = new Array('../second/colour.html','../second/bw.html','../second/fiftyfifty.html');
+    		var ranarray = myarray[Math.floor(Math.random()*myarray.length)];
+    		window.location = ranarray;
 		}
 	}
 	</script>
