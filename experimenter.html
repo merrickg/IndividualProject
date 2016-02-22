@@ -57,44 +57,103 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Results</h1>
+    <center>
+
+    <h2>Results of 1st trial</h2>
                 <hr>
-                <p>Number Correct:</p> <p id="correct"></p>
-                <p>Number wrong:</p> <p id="wrong"></p>
+                <p>Number Correct:</p> <p id="correct1"></p>
+                <p>Number wrong:</p> <p id="wrong1"></p>
 
-            </div>
-        </div>
+                <h2>Results of 2nd trial</h2>
+                <hr>
+                <p>Number Correct:</p> <p id="correct2"></p>
+                <p>Number wrong:</p> <p id="wrong2"></p>
 
-    </header>
+                <h2>Results of 3rd trial</h2>
+                <hr>
+                <p>Number Correct:</p> <p id="correct3"></p>
+                <p>Number wrong:</p> <p id="wrong3"></p>
+
+    </center>
+                
 
     <script>
-        if (localStorage.getItem("correct") === null)
+        if (localStorage.getItem("correct1") === null)
         {
             var number_correct = 0
-            document.getElementById("correct").innerHTML = number_correct;
+            document.getElementById("correct1").innerHTML = number_correct;
         }
 
         else {
 
-            var get_string = localStorage.getItem("correct");
+            var get_string = localStorage.getItem("correct1");
             var number_correct = parseInt(get_string);
-            document.getElementById("correct").innerHTML = number_correct;
+            document.getElementById("correct1").innerHTML = number_correct;
         }
 
-        if (localStorage.getItem("wrong") === null)
+        if (localStorage.getItem("wrong1") === null)
         {
             var number_wrong = 0
-            document.getElementById("wrong").innerHTML = number_wrong;
+            document.getElementById("wrong1").innerHTML = number_wrong;
         }
 
         else {
 
-            var get_string = localStorage.getItem("wrong");
+            var get_string = localStorage.getItem("wrong1");
             var number_wrong = parseInt(get_string);
-            document.getElementById("wrong").innerHTML = number_wrong;
+            document.getElementById("wrong1").innerHTML = number_wrong;
+        }
+
+        if (localStorage.getItem("correct2") === null)
+        {
+            var number_correct = 0
+            document.getElementById("correct2").innerHTML = number_correct;
+        }
+
+        else {
+
+            var get_string = localStorage.getItem("correct2");
+            var number_correct = parseInt(get_string);
+            document.getElementById("correct2").innerHTML = number_correct;
+        }
+
+        if (localStorage.getItem("wrong2") === null)
+        {
+            var number_wrong = 0
+            document.getElementById("wrong2").innerHTML = number_wrong;
+        }
+
+        else {
+
+            var get_string = localStorage.getItem("wrong2");
+            var number_wrong = parseInt(get_string);
+            document.getElementById("wrong2").innerHTML = number_wrong;
+        }
+
+        if (localStorage.getItem("correct3") === null)
+        {
+            var number_correct = 0
+            document.getElementById("correct3").innerHTML = number_correct;
+        }
+
+        else {
+
+            var get_string = localStorage.getItem("correct3");
+            var number_correct = parseInt(get_string);
+            document.getElementById("correct3").innerHTML = number_correct;
+        }
+
+        if (localStorage.getItem("wrong3") === null)
+        {
+            var number_wrong = 0
+            document.getElementById("wrong3").innerHTML = number_wrong;
+        }
+
+        else {
+
+            var get_string = localStorage.getItem("wrong3");
+            var number_wrong = parseInt(get_string);
+            document.getElementById("wrong3").innerHTML = number_wrong;
         }
 
     localStorage.clear();
