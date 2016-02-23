@@ -32,18 +32,24 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script type="text/javascript">
-    function loadTrialone()
-    {
-    var myarray = new Array('practice/colour.html');
+    <script>
+
+    var timeRemaining = 5;
+
+    var timer = setInterval('countdown()',1000);
+
+    function countdown() {
+    timeRemaining -= 1;
+    if (timeRemaining  == 0) {
+    
+    clearInterval(timer);
+    var myarray = new Array('third/colour.html','third/bw.html','third/fiftyfifty.html');
     var ranarray = myarray[Math.floor(Math.random()*myarray.length)];
     window.location = ranarray;
     }
-    </script>
+    }
 
-    <script>
-    localStorage.clear();
-    </script>
+</script>
 
 </head>
 
@@ -71,12 +77,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Individual Project Experiment</h1>
-                <hr>
-                <p>By now you should have been given instructions on how to complete the experiment and signed a consent form.</p>
-                <p>If you are stil unsure about anything please ask the experimenter.</p>
-                <p>When you are ready to start Trial 1 click "Begin"</p>
-                <button class="btn btn-default" onclick="loadTrialone()">Begin</button>
+                <h1>Trial 3</h1>
             </div>
         </div>
     </header>
